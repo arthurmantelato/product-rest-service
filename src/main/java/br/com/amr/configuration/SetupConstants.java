@@ -10,5 +10,7 @@ public interface SetupConstants {
 
         String HIBERNATE_HBM2DDL_AUTO = "hibernate.hbm2ddl.auto";
         String HIBERNATE_DIALECT = "hibernate.dialect";
+
+        String PRODUCT_CSV_DATA_SOURCE_FILE_PATH = "product.csv.data.source.file.path";
     }
 }
