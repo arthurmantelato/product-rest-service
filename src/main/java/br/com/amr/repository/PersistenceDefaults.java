@@ -1,7 +1,5 @@
 package br.com.amr.repository;
 
-import org.springframework.data.domain.Sort;
-
 public interface PersistenceDefaults {
 
     interface Pagination {
