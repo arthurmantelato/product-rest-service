@@ -24,7 +24,7 @@ public class ProductRestController {
         this.service = service;
     }
 
-    @GetMapping(value = "/products")
+    @GetMapping(value = "/product")
     public Page<Product> findAll(@RequestParam(name = "pageNumber") Optional<Integer> pageNumber,
                               @RequestParam(name = "pageSize") Optional<Integer> pageSize,
                               @RequestParam(name = "sortCriteria") Optional<String> sortCriteria,
@@ -33,7 +33,7 @@ public class ProductRestController {
         return service.findAll(pageRequest);
     }
 
-    @GetMapping(value = "/products/{id}")
+    @GetMapping(value = "/product/{id}")
     public ResponseEntity<Product> findById(@PathVariable("id") Long id) {
         Optional<Product> product = service.findById(id);
         if(!product.isPresent()) {
